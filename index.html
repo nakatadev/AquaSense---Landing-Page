@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaSense</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="section__introdu" id="section1">
+            <header>
+                <nav class="cabecalho__nav">
+                    <a href="section1">Inicio</a>
+                    <a href="#"> Solução</a>
+                    <a href="#">Objetivo</a>
+                    <a href="#">Publico</a>
+                    <a href="#">Qualidade da Agua</a>
+                    <a href="#">Dia-a-dia</a>
+                    <a href="#"></a>
+                </nav>
+            </header>
+            <div class="introducao__texto">
+                <h1>Oceanos, vibrantes e cheios de vida, estão agora em perigo iminente. Uma inundação de plástico e poluentes tóxicos os sufoca, enquanto práticas de pesca insustentáveis esgotam seus recursos.</h1>
+            </div>
+        </section>
+        <section class="section__solucao">
+            <div class="elementos__solucao">
+                <img src="OIG1-removebg-preview 1.png" alt="Sistema de Monitoramento inteligente de agua." class="imagem__solucao">
+                <div class="textos__solucao">
+                    <h1>O AquaSense foi desenvolvido, visando a preservação dos oceanos. <br> Consiste em um sistema Iot, que monitora a qualidade da água, detectando variações e promovendo conservação</h1>
+                    <h1>O sistema faz o monitoramento de:</h1>
+                    <br>
+                    <ul>
+                        <li>pH</li>
+                        <li>Temperatura</li>
+                        <li>Salinidade</li>
+                        <li>Oxigênio</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section__objetivos">
+            <div class="elementos__objetivos">
+                <div class="textos__objetivos">
+                    <h2>Nosso Objetivo:</h2>
+                    <ul>
+                        <li>Monitorar Qualidade da água em diversas regiões marítimas.</li>
+                        <li>Contribuir com a proteção e conservação dos ecossistemas aquáticos.</li>
+                        <li>Identificar variações na composição da água, compromentendo sua qualidade.</li>
+                        <li>Fornecer informações precisas e atualizadas.</li>
+                    </ul>
+                </div>
+                    <img src="imagem_exploradora.png" alt="Imagem de Oceanógrafa." class="imagem__objetivos">
+            </div>
+        </section>
+
+
+        <section class="section__publico">
+            <div class="elementos__publico">
+                <img src="publico1.png" alt="Imagem de ONG 'Eu Apoio o Oceano'" class="imagem__publico">
+                <div class="textos__publico">
+                    <h2>Buscamos fornecer informações em tempo real para Gestores ambientais, Entidades destinadas a preservação dos mares, e também a população litorânea.</h2>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section__dados">
+            <div class="elementos__dados">
+                <h2>Dados coletados de diferentes regiões são transformados em gráficos para a ánalise precisa de corpos da água.</h2>
+                <div class="graficos__dados">
+                    <canvas class="ph__chart"></canvas>
+                    <canvas class="OX__chart"></canvas>
+                    <canvas class="sal__chart"></canvas>
+                    <canvas class="temp__chart"></canvas>
+                </div>
+                <h6>Graficos em tempo real</h6>
+            </div>
+
+        </section>
+
+
+
+
+
+
+    </main>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <script src="script.js"></script>
+</body>
+</html>
