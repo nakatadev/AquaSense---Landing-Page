@@ -5,26 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AquaSense</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
 </head>
 <body>
     <main>
         <section class="section__introdu" id="section1">
             <header>
                 <nav class="cabecalho__nav">
-                    <a href="section1">Inicio</a>
-                    <a href="#"> Solução</a>
-                    <a href="#">Objetivo</a>
-                    <a href="#">Publico</a>
-                    <a href="#">Qualidade da Agua</a>
-                    <a href="#">Dia-a-dia</a>
-                    <a href="#"></a>
+                    <a href="#section1">Inicio</a>
+                    <a href="#solucao"> Solução</a>
+                    <a href="#objetivos">Objetivo</a>
+                    <a href="#publico">Publico</a>
+                    <a href="#dados">Qualidade da Agua</a>
+                    <a href="#beneficios">Dia-a-dia</a>
                 </nav>
             </header>
-            <div class="introducao__texto">
-                <h1>Oceanos, vibrantes e cheios de vida, estão agora em perigo iminente. Uma inundação de plástico e poluentes tóxicos os sufoca, enquanto práticas de pesca insustentáveis esgotam seus recursos.</h1>
+            <div class="elementos__introducao">
+                <div>
+                    <div class="introducao__texto">
+                        <h1>Oceanos, vibrantes e cheios de vida, estão agora em perigo iminente. Uma inundação de plástico e poluentes tóxicos os sufoca, enquanto práticas de pesca insustentáveis esgotam seus recursos.</h1>
+                        <button onclick="abrirVideo()" type="button"></button>
+                    </div>
+                    <div>
+                        <button type="button" onclick="abrirVideo()" class="botao__introducao">Assista agora</button>
+                    </div>
+                </div>
+                <div class="video__introducao">
+                    
+                </div>
             </div>
         </section>
-        <section class="section__solucao">
+        <section class="section__solucao" id="solucao">
             <div class="elementos__solucao">
                 <img src="OIG1-removebg-preview 1.png" alt="Sistema de Monitoramento inteligente de agua." class="imagem__solucao">
                 <div class="textos__solucao">
@@ -41,7 +53,7 @@
             </div>
         </section>
 
-        <section class="section__objetivos">
+        <section class="section__objetivos" id="objetivos">
             <div class="elementos__objetivos">
                 <div class="textos__objetivos">
                     <h2>Nosso Objetivo:</h2>
@@ -55,18 +67,24 @@
                     <img src="imagem_exploradora.png" alt="Imagem de Oceanógrafa." class="imagem__objetivos">
             </div>
         </section>
+  
 
-
-        <section class="section__publico">
+        <section class="section__publico" id="publico">
             <div class="elementos__publico">
-                <img src="publico1.png" alt="Imagem de ONG 'Eu Apoio o Oceano'" class="imagem__publico">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="regular_28e201e1ea3c0a165d29c92e570bbe7e.png" alt="Vozes dos Oceanos"></div>  
+                        <div class="swiper-slide"><img src="logo_tamar.jpg" alt="Projeto Tamar"></div> 
+                        <div class="swiper-slide"><img src="publico1.png" alt="ONG Apoio o Oceano"></div>
+                    </div>
+                </div>
                 <div class="textos__publico">
                     <h2>Buscamos fornecer informações em tempo real para Gestores ambientais, Entidades destinadas a preservação dos mares, e também a população litorânea.</h2>
                 </div>
             </div>
         </section>
         
-        <section class="section__dados">
+        <section class="section__dados" id="dados">
             <div class="elementos__dados">
                 <h2>Dados coletados de diferentes regiões são transformados em gráficos para a ánalise precisa de corpos da água.</h2>
                 <div class="graficos__dados">
@@ -77,10 +95,30 @@
                 </div>
                 <h6>Graficos em tempo real</h6>
             </div>
-
         </section>
 
+        <section class="section__beneficios" id="beneficios">
+            <div class="elementos__beneficios">
+                <h2>
+                    Nosso sistema oferece benefícios práticos no dia a dia ao fornecer informações em tempo real sobre a qualidade da água nos oceanos.
+                </h2>
+                <img src="imagem__beneficios.png" alt="Imagem de fundo do mar com tartarugas">
+                <ul class="topicos__beneficios">
+                    <li>
+                        Agências governamentais e empresas podem tomar medidas rápidas para mitigar a poluição e conservar os recursos hídricos. </li>
+                    <li>
+                        Moradores costeiros podem se manter informados sobre a saúde dos corpos d'água locais, ajudando a proteger o ambiente marinho.
+                    </li> 
+                </ul>
+            </div>
+        </section>
 
+        <footer class="section__rodape">
+            <div class="elementos__rodape">
+                <h2><em>AQUASENSE ©</em></h2>
+                <h2> Todos os direitos reservados.</h2>
+            </div>
+        </footer>
 
 
 
@@ -89,10 +127,9 @@
 
 
 
-
-
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
